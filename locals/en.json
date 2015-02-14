@@ -6,7 +6,7 @@
     "what-title": "What",
     "what-content.innerHTML": "<strong>Go out</strong> and experience the wilderness.<br /><strong>Learn more</strong> about the surroundings you venture into.<br /><strong>An addition</strong> to a family outing.",
     "how-title": "How",
-    "how-content.innerHTML": "Tag Story will let you discover stories in your area. Through narrative stories you can interact with tags using your smartphone. Tags can either be physical (NFC and QR-code) or abstract (GPS), guiding you from one place to another. Experience stories by you and others.",
+    "how-content.innerHTML": "Tag Story will let you discover stories in your area. Through narrative stories you can interact with tags using your smartphone. Tags can either be physical (NFC and QR-code) or abstract (GPS), guiding you from one place to another. Experience stories by you and others.<br /><a href=\"more.html#top\">Read more</a>",
     "app-title": "The app",
     "app-content.innerHTML": "We are working on an Android app where you can download different stories. Each story will take you through a narrative with text, images, questions, and puzzles.",
     "contact-title": "Questions or comments?",
@@ -16,5 +16,11 @@
     "contact-message.placeholder": "Message",
     "contact-send": "Send message",
     "copyright.innerHTML": "&copy; Tag Story. All rights reserved.",
-    "design.innerHTML": "Design: <a href=\"http://html5up.net\">HTML5 UP</a>"
+    "design.innerHTML": "Design: <a href=\"http://html5up.net\">HTML5 UP</a>",
+    "more-title": "About stories and tags",
+    "stories-title": "Stories",
+    "stories-content": "Stories are what drives you forward.",
+    "tags-title": "Tags",
+    "tags-content": "In Tag Story there are three different tags. Two of the tags are physical, while the last one is using global navigation satellite system (GNSS) for localisation. When making a story the author can choose to use only one of the tags, or mix them up based on where the tag is supposed to be.",
+    "button-back": "Go back"
 }
