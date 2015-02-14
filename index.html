@@ -24,7 +24,12 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
   </head>
   <body>
-
+    <!--span class="language-flags">
+      <img src="images/england.png" id="en" alt="The flag of England">
+      <img src="images/no.png" id="no" alt="The flag of Norway">
+      <img src="images/bg.png" id="bg" alt="The flag of Bulgaria">
+      <img src="images/gr.png" id="gr" alt="The flag of Greece">
+    </span-->
     <!-- Header -->
     <div id="header">
       <img src="images/tag.png">
@@ -127,6 +132,12 @@
     <script>
       document.addEventListener("DOMContentLoaded", function() {
             html10n.localize('en');
+            $('.language-flags').children('img').on('click', function() {
+                  var id = this.id;
+                  if (id) {
+                        html10n.localize(id);
+                  }
+            })
       });
     </script>
   </body>

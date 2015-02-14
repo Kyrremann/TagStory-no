@@ -955,3 +955,11 @@ input[type="button"].small,
 #main footer.major {
   background: white;
 }
+
+/* flags */
+.language-flags {
+  position: absolute;
+  z-index: 1000;
+  padding-right: 10px;
+  right: 0;
+}
