@@ -43,27 +43,22 @@
 
     <!-- Main -->
     <div id="main">
-      <div class="box container">
+      <div class="box alt container">
 	<header>
-	  <a name="top">
-	    <h2 data-l10n-id="more-title"></h2>
+	  <a name="stories">
+	  <h2 data-l10n-id="published-stories-title"></h2>
+	  <p data-l10n-id="published-stories-content"></p>
 	  </a>
 	</header>
+	<hr />
+	<div id="list-of-stories">
+	</div>
+      </div>
+      
+      <div class="box container">
 	<section>
 	  <header>
-	    <h3 data-l10n-id="stories-title"></h3>
-	  </header>
-	  <p data-l10n-id="stories-content"></p>
-	</section>
-	<section>
-	  <header>
-	    <h3 data-l10n-id="tags-title"></h3>
-	  </header>
-	  <p data-l10n-id="tags-content"></p>
-	</section>
-	<section>
-	  <header>
-	    <a data-l10n-id="button-back" href="/index.html#how" class="button"></a>
+	    <a data-l10n-id="button-back" href="/index.html#stories" class="button"></a>
 	  </header>
 	</section>
       </div>
@@ -96,7 +91,28 @@
                   if (id) {
                         html10n.localize(id);
                   }
-            })
+            });
+            $.getJSON("http://tagstory.herokuapp/api/stories/json", function( data ) {
+                  var right = true;
+                  $.each( data, function( key, val ) {
+                        var story = val['value']
+                        if (right) {
+                              var html = '<section class="feature right">\n';
+                              right = false;
+                        } else {
+                              var html = '<section class="feature left">\n';
+                              right = true;
+                        }
+                        html += '<img src="https://s3-eu-west-1.amazonaws.com/tagstory/images/' + story["image"] + '" alt="" class="image" />\n';
+                        html += '<div class="content">\n';
+                        html += '<h3>' + story["title"] + '</h3>\n';
+                        html += '<p>' + story['description'] + '</p>\n';
+                        html += '</div>\n';
+                        html += '</section>';
+                        
+                        $('#list-of-stories').append(html);
+                  });
+            });
       });
     </script>
   </body>

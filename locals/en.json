@@ -22,5 +22,10 @@
     "stories-content": "Stories are what drives you forward.",
     "tags-title": "Tags",
     "tags-content": "In Tag Story there are three different tags. Two of the tags are physical, while the last one is using global navigation satellite system (GNSS) for localisation. When making a story the author can choose to use only one of the tags, or mix them up based on where the tag is supposed to be.",
-    "button-back": "Go back"
+    "button-back": "Go back",
+    "published-stories-see": "See the stories",
+    "published-stories-see-content": "For now you can browse the stories from here.",
+    "published-stories-market-button": "Visit the market",
+    "published-stories-title": "Stories",
+    "published-stories-content": "Underneath you can see a list of published stories"
 }
