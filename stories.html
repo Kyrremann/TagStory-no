@@ -91,7 +91,7 @@
                         html10n.localize(id);
                   }
             });
-            $.getJSON("http://localhost:5000/api/stories/json", function( data ) {
+            $.getJSON("http://tagstory.herokuapp.com/api/stories/json", function( data ) {
                   var right = true;
                   $.each( data, function( key, val ) {
                         var story = val['value']
