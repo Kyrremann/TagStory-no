@@ -47,7 +47,6 @@
 	<header>
 	  <a name="stories">
 	  <h2 data-l10n-id="published-stories-title"></h2>
-	  <p data-l10n-id="published-stories-content"></p>
 	  </a>
 	</header>
 	<hr />
@@ -92,7 +91,7 @@
                         html10n.localize(id);
                   }
             });
-            $.getJSON("http://tagstory.herokuapp/api/stories/json", function( data ) {
+            $.getJSON("http://localhost:5000/api/stories/json", function( data ) {
                   var right = true;
                   $.each( data, function( key, val ) {
                         var story = val['value']
