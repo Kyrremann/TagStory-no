@@ -963,3 +963,11 @@ input[type="button"].small,
   padding-right: 10px;
   right: 0;
 }
+
+.feature {
+  height: 100%;
+}
+
+.feature .content {
+  padding-top: 0em;
+}
