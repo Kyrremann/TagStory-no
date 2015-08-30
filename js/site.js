@@ -17,16 +17,16 @@ function setLanguage() {
 }
 
 function getStoriesFromServer() {
-    $.getJSON("http://tagstory.herokuapp.com/api/stories/json", function( data ) {
-        var right = true;
+    $.getJSON("http://tagstoryapi.herokuapp.com/v1/stories?source=tagstory.no&language=" + lang, function( data ) {
+        var rightAlign = true;
         $.each( data, function( key, val ) {
             var story = val['value']
-            if (right) {
+            if (rightAlign) {
                 var html = '<section class="feature right">\n';
-                right = false;
+                rightAlign = false;
             } else {
                 var html = '<section class="feature left">\n';
-                right = true;
+                rightAlign = true;
             }
 
             html += '<img src="https://s3-eu-west-1.amazonaws.com/tagstory/images/' + story["image"] + '" alt="" class="image" />\n';
