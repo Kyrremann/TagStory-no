@@ -30,7 +30,7 @@ function getStoriesFromServer() {
                 rightAlign = true;
             }
 
-            html += '<img src="https://s3-eu-west-1.amazonaws.com/tagstory/images/' + story["image"] + '" alt="" class="image" />\n';
+            html += '<img src="https://s3-eu-west-1.amazonaws.com/tagstory/stories/' + story['UUID'] + '/images/' + story["image"] + '" alt="" class="image" />\n';
             html += '<div class="content">\n';
             html += '<h3>' + story["title"] + '</h3>\n';
             html += '<p>' + story['description'] + '</p>\n';
