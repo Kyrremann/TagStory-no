@@ -18,7 +18,7 @@ function setLanguage() {
 
 function getStoriesFromServer() {
     var lang = docCookies.getItem('lang');
-    $.getJSON("http://tagstoryapi.herokuapp.com/v1/stories?source=tagstory.no&language=" + lang, function( data ) {
+    $.getJSON("https://tagstoryapi.herokuapp.com/v1/stories?source=tagstory.no&language=" + lang, function( data ) {
         var rightAlign = true;
         $.each( data, function( key, val ) {
             var story = val['value']
